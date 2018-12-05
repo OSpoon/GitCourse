@@ -175,7 +175,7 @@ git push
 | git push origin name                 | 标签发布     |
 | git push origin :refs/tags/<tagname> | 删除远程标签 |
 
-五 分支管理
+##### 五 分支管理
 
 | 命令                   | 解释         |
 | ---------------------- | ------------ |
@@ -190,9 +190,6 @@ git push
    git merge feature_1 合并feature_1到master
    git branch -d feature_1 删除废弃分支
    ```
-
-2. 
-
 
 
 #### 团队协作git操作流程
@@ -215,14 +212,14 @@ git push
 
 ##### 二 目前正在test分支上面开发某个功能，但是没有完成。突然一个紧急的bug需要处理
 
-1. git add .
-2. git stash
-3. git checkout bugFixBranch
-4. git pull --rebase origin master
-5. fix the bug
-6. git add .
-7. git commit -m ''
-8. git push
-9. git checkout test
-10. git stash pop
-11. continue new feature's development
+1. git add . //把修改加入stage中
+2. git stash //暂存当前修改内容
+3. git checkout bugFixBranch //切换fix分支
+4. git pull --rebase origin master 
+5. fix the bug //修改bug
+6. git add . //添加暂存区
+7. git commit -m '' //提交版本库
+8. git push //推送远程仓库
+9. git checkout test //捡出test分支
+10. git stash pop //弹出修改内容
+11. continue new feature's development //继续开发test分支
