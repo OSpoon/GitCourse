@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.cnblogs.com/tian-xie/p/6264104.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="origin">
+<title>SourceTree的基本使用 - 天字天蝎 - 博客园</title>
+<meta property="og:description" content="SourceTree的基本使用，冲突的解决，各类分支的使用场景">
+<link type="text/css" rel="stylesheet" href="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/bundle-CodingLife.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/bundle-CodingLife-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/tian-xie/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/tian-xie/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/tian-xie/wlwmanifest.xml">
+<script src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/f.txt"></script><script src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/amp4ads-host-v0.js.下载"></script><script src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/pubads_impl_rendering_275.js.下载"></script><script async="" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/analytics.js.下载"></script><script src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/jquery-2.2.0.min.js.下载"></script>
+<script type="text/javascript">var currentBlogApp = 'tian-xie', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+<link rel="preload" href="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/f(1).txt" as="script"><script type="text/javascript" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/f(1).txt"></script><script src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/pubads_impl_275.js.下载" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-31/html/container.html"></head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/tian-xie/"><img id="blogLogo" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/tian-xie/">天字天蝎</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/tian-xie/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E5%A4%A9%E5%AD%97%E5%A4%A9%E8%9D%8E">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/tian-xie/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/tian-xie/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 11&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 18</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/tian-xie/p/6264104.html">SourceTree的基本使用</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><h2><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">1. SourceTree是什么</span></h2>
+<ul>
+<li><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">拥有可视化界面的项目版本控制软件，适用于git项目管理</span></li>
+<li><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">window、mac可用</span></li>
+</ul>
+<h2><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">2. 获取项目代码</span></h2>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">1. 点击克隆/新建</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109085203869-379017851.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">2. 在弹出框中输入项目地址，http或者ssh地址都可以</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109140217791-1586698899.png" alt=""></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　如果箭头指向的仓库类型表明“这不是一个标准的Git仓库”，可能是有以下原因</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　　　1) 项目地址获取错误</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　　　2) 没有项目访问权限</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">3. 点击“克隆”，等待项目克隆完成，完成后，左侧只有一个分支master</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109090353322-354908668.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　克隆完成后，得到的是发布后的master源码，如果想要获取最新的正在开发中的源码，需要对项目流进行初始化，点击“Git工作流”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109090528994-685566929.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109090615400-737431825.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　直接点“确定”，获取develop分支源码</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109090719056-2130711032.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　开发任务都是在develop分支上完成的</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">4. 分支共有5种类型</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　1) master，最终发布版本，整个项目中有且只有一个</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　2) develop，项目的开发分支，原则上项目中有且只有一个</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　3) feature，功能分支，用于开发一个新的功能</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　4) release，预发布版本，介于develop和master之间的一个版本，主要用于测试</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　5) hotfix，修复补丁，用于修复master上的bug，直接作用于master</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">5. master和develop上文中已介绍过，当开发中需要增加一个新的功能时，可新建feature分支，用于增加新功能，并且不影响开发中的develop源码，当新功能增加完成后，完成feature分支，将新功能合并到develop中，更新develop上的代码</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">&nbsp; &nbsp; 1) 新建feature。首先当前开发分支指向develop，点击“Git工作流”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109091958588-558837626.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109091908260-379906698.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">选择“建立新的分支”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109092139150-347914709.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">在预览中可看到，feature分支是从develop分出的，输入功能名称，点击确定，项目结构中增加feature分支，并且当前开发分支指向新建的feature分支</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109092354994-926356588.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　2) 在F_add_feature分支下进行开发任务，并提交</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109093014463-1823777259.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">以上操作分别增加了feature_1、feature_2、feature_3文件，共提交3次，现项目文件夹下共三个文件</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109093143010-919012812.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">当切换为develop分支后，会发现，在develop下并没有新增的三个文件，说明在feature下进行操作，并不影响develop分支源码</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　3) 完成feature开发后，将feature中的源码合并到develop分支。将当前分支指向F_add_feature分支，点击“Git工作流”，选择“完成功能”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109093452978-1709211062.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109093514275-1775167695.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">预览中，表明feature分支将合并到develop，点击确定，进行提交合并，合并成功后</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109093636447-2094050690.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　4) 需要再增加新的功能时，重复以上操作即可</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">　　5) 当多人协作开发时，可能会出现，不同人员对同一文件进行操作，从而引起合并冲突，对这种情况进行模拟，在当前新建两个feature，分别对feature_1文件进行修改，然后分别合并</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109094350088-888526871.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">feature_1在feature_1.txt下做如下操作</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109094443838-880041008.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">feature_2在feature_1.txt下做如下操作</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109100106635-831259442.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">先后合并F_feature_1和F_feature_2，会出现冲突</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109100313556-476820965.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">点击close，查看未提交的更改，提示feature_1.txt出现冲突，</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109100358869-1482700611.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">打开feature_1.txt</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109100529681-930447897.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">&nbsp;</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">&nbsp;</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">&nbsp;出现&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD、=======、&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/F_feature_2，HEAD和=号之间表示当前分支下的代码，=号和&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/F_feature_2之间表示要合并的分支下的代码，&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/F_feature_2表示了要合并的分支的分支名称，</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">根据情况区分要保留的代码，要删除的代码，最后再删除&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD、=======、和&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/F_feature_2</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109100952338-190078150.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">将修改的代码再进行一次提交</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109101108322-1596654871.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">一旦出现feature合并冲突，要合并的feature分支不会被删除，如F_feature_2，确保合并没有问题后，可手动删除F_feature_2</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">6. 当开发到一定阶段，可以发布测试版本时，可以从develop分支，建立release分支，进入预发布测试阶段。点击“Git工作流”，选择“建立新的发布版本”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109131712931-768836924.png" alt="">　　<img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109131739541-592120046.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">预览中可以看到，release是从develop分出的，输入发布版本名‘R_v1.0’，点击确定</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109131916556-1163021502.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">R_v1.0为阶段性发布版本，主要用于发布前进行测试，后续的开发工作仍旧在develop上进行，如果在测试过程中发现问题，直接在release上进行修改，修改完成后进行提交</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">7. 对release分支R_v1.0进行两次修改后，测试完成，可以进行正式发布，在当前分支指向R_v1.0分支下，点击“Git工作流”，选择“完成发布版本”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109132509291-1687162251.png" alt="">&nbsp;<img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109132523791-1182055426.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">在预览中可以看到，R_v1.0向develop和master分别合并，点击确定，完成正式发布。</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109132707963-272919228.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">完成合并后，默认指向develop为当前分支，master增加多个版本更新，将master分支推送到origin，完成线上发布</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">8. 正式版本发布后，develop可继续进行后续开发，当正式版本出现问题时，需要进行问题的修改，可以在master分支建立修改补丁hotfix。将当前分支切换到master，点击“Git工作流”，选择“建立新的修复补丁”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109133243431-1745425468.png" alt="">&nbsp;&nbsp;<img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109133256681-446454863.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">预览中hotfix分支是从master拉去出来的，输入修复补丁名，点确定</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109133410088-230918294.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">在该分支下进行master的问题修改，修改完成后进行提交。当所有补丁问题修改完成后，点击“Git工作流”，选择“完成修复补丁”</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109133653994-1466239212.png" alt="">　　<img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109133722885-825457495.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">预览中，H_fix_1向master和develop分别合并，点击确定，完成分支合并。</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;"><img style="display: block; margin-left: auto; margin-right: auto" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/569926-20170109133905822-1312715.png" alt=""></span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">合并完成后，默认当前分支为develop，master分支有版本需要更新，当前分支切换为master，进行推送，完成补丁修复。</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">9. 在完成发布版本和完成修复补丁时，如果遇到冲突，可仿照上述5进行冲突修改，再进行后续操作</span></p>
+<p><span style="font-size: 16px; font-family: &quot;Microsoft YaHei&quot;">&nbsp;</span></p></div><div id="MySignature" style="display: block;">如需转载请注明出处。http://www.cnblogs.com/tian-xie/</div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="https://www.cnblogs.com/tian-xie/category/935083.html" target="_blank">SourceTree</a></div>
+<div id="EntryTag">标签: <a href="https://www.cnblogs.com/tian-xie/tag/SourceTree/">SourceTree</a>, <a href="https://www.cnblogs.com/tian-xie/tag/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(6264104,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;6a9d1b6d-ba24-e311-8d02-90b11c0b17d6&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/tian-xie/" target="_blank"><img src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/sample_face.gif" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/tian-xie/">天字天蝎</a><br>
+            <a href="http://home.cnblogs.com/u/tian-xie/followees">关注 - 12</a><br>
+            <a href="http://home.cnblogs.com/u/tian-xie/followers">粉丝 - 10</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;6a9d1b6d-ba24-e311-8d02-90b11c0b17d6&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(6264104,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">16</span>
+    </div>
+    <div class="buryit" onclick="votePost(6264104,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="https://www.cnblogs.com/tian-xie/p/6284639.html" class="p_n_p_prefix">» </a> 下一篇：<a href="https://www.cnblogs.com/tian-xie/p/6284639.html" title="发布于2017-01-14 10:20">CSS3样式linear-gradient的使用</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2017-01-09 14:10</span> <a href="https://www.cnblogs.com/tian-xie/">天字天蝎</a> 阅读(<span id="post_view_count">146697</span>) 评论(<span id="post_comment_count">15</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=6264104" rel="nofollow">编辑</a> <a href="https://www.cnblogs.com/tian-xie/p/6264104.html#" onclick="AddToWz(6264104);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=191041,cb_entryId=6264104,cb_blogApp=currentBlogApp,cb_blogUserGuid='6a9d1b6d-ba24-e311-8d02-90b11c0b17d6',cb_entryCreatedDate='2017/1/9 14:10:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3693168" class="layer">#1楼</a><a name="3693168" id="comment_anchor_3693168"></a>  <span class="comment_date">2017-05-16 09:53</span> <a id="a_comment_author_3693168" href="https://www.cnblogs.com/mikusnail/" target="_blank">叫我欧尼酱就行了</a> <a href="http://msg.cnblogs.com/send/%E5%8F%AB%E6%88%91%E6%AC%A7%E5%B0%BC%E9%85%B1%E5%B0%B1%E8%A1%8C%E4%BA%86" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3693168" class="blog_comment_body">点赞</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3693168,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3693168,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3693168_avatar" style="display:none;">http://pic.cnblogs.com/face/725002/20180718101708.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3770350" class="layer">#2楼</a><a name="3770350" id="comment_anchor_3770350"></a>  <span class="comment_date">2017-08-30 10:51</span> <a id="a_comment_author_3770350" href="http://home.cnblogs.com/u/957611/" target="_blank">swenwen</a> <a href="http://msg.cnblogs.com/send/swenwen" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3770350" class="blog_comment_body">写的很详细，赞</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3770350,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3770350,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3774826" class="layer">#3楼</a><a name="3774826" id="comment_anchor_3774826"></a>  <span class="comment_date">2017-09-04 17:54</span> <a id="a_comment_author_3774826" href="http://home.cnblogs.com/u/1232071/" target="_blank">xiemingyuan123</a> <a href="http://msg.cnblogs.com/send/xiemingyuan123" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3774826" class="blog_comment_body">很好</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3774826,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3774826,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3783432" class="layer">#4楼</a><a name="3783432" id="comment_anchor_3783432"></a>  <span class="comment_date">2017-09-13 17:49</span> <a id="a_comment_author_3783432" href="https://www.cnblogs.com/MrALei/" target="_blank">阿磊ing</a> <a href="http://msg.cnblogs.com/send/%E9%98%BF%E7%A3%8Aing" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3783432" class="blog_comment_body">写的很详细，谢了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3783432,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3783432,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3783432_avatar" style="display:none;">http://pic.cnblogs.com/face/330300/20150325110107.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3813451" class="layer">#5楼</a><a name="3813451" id="comment_anchor_3813451"></a>  <span class="comment_date">2017-10-17 17:35</span> <a id="a_comment_author_3813451" href="http://home.cnblogs.com/u/1225114/" target="_blank">一米1小米</a> <a href="http://msg.cnblogs.com/send/%E4%B8%80%E7%B1%B31%E5%B0%8F%E7%B1%B3" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3813451" class="blog_comment_body">赞一个</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3813451,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3813451,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3891697" class="layer">#6楼</a><a name="3891697" id="comment_anchor_3891697"></a>  <span class="comment_date">2018-01-17 11:08</span> <a id="a_comment_author_3891697" href="https://www.cnblogs.com/yjb18335717584/" target="_blank">时光释怀了记忆</a> <a href="http://msg.cnblogs.com/send/%E6%97%B6%E5%85%89%E9%87%8A%E6%80%80%E4%BA%86%E8%AE%B0%E5%BF%86" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3891697" class="blog_comment_body"><img src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/1107707-20180117110715928-261302021.png" alt="" border="0" "=""><br><br>博主，这里是怎么创建三个文件，为什么没有相应的操作呢</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3891697,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3891697,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3891697_avatar" style="display:none;">http://pic.cnblogs.com/face/1107707/20170916151847.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3892458" class="layer">#7楼</a><a name="3892458" id="comment_anchor_3892458"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2018-01-18 09:16</span> <a id="a_comment_author_3892458" href="https://www.cnblogs.com/tian-xie/" target="_blank">天字天蝎</a> <a href="http://msg.cnblogs.com/send/%E5%A4%A9%E5%AD%97%E5%A4%A9%E8%9D%8E" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3892458" class="blog_comment_body"><a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3891697" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3891697);">@</a>
+时光释怀了记忆<br>在项目文件夹下手动新建三个文件即可，模仿的是在项目中有新增文件的情况，和平时新建文件是一样的</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3892458,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3892458,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3923114" class="layer">#8楼</a><a name="3923114" id="comment_anchor_3923114"></a>  <span class="comment_date">2018-03-14 23:08</span> <a id="a_comment_author_3923114" href="https://www.cnblogs.com/xiaopohou/" target="_blank">monkey's</a> <a href="http://msg.cnblogs.com/send/monkey%26%2339%3Bs" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3923114" class="blog_comment_body">写的真细致！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3923114,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3923114,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3923114_avatar" style="display:none;">http://pic.cnblogs.com/face/u305497.jpg?id=27231910</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3924132" class="layer">#9楼</a><a name="3924132" id="comment_anchor_3924132"></a>  <span class="comment_date">2018-03-15 17:47</span> <a id="a_comment_author_3924132" href="https://www.cnblogs.com/Jason-Jan/" target="_blank">Jason_Jan</a> <a href="http://msg.cnblogs.com/send/Jason_Jan" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3924132" class="blog_comment_body">楼主百度云有下载链接么，官网下的安装不了。。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3924132,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3924132,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3924132_avatar" style="display:none;">http://pic.cnblogs.com/face/1159459/20171205161139.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#3989085" class="layer">#10楼</a><a name="3989085" id="comment_anchor_3989085"></a>  <span class="comment_date">2018-06-02 19:52</span> <a id="a_comment_author_3989085" href="https://www.cnblogs.com/byron0918/" target="_blank">我不将就</a> <a href="http://msg.cnblogs.com/send/%E6%88%91%E4%B8%8D%E5%B0%86%E5%B0%B1" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3989085" class="blog_comment_body">赞一个</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3989085,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3989085,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3989085_avatar" style="display:none;">http://pic.cnblogs.com/face/643405/20180125135418.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#4019484" class="layer">#11楼</a><a name="4019484" id="comment_anchor_4019484"></a>  <span class="comment_date">2018-07-13 10:39</span> <a id="a_comment_author_4019484" href="https://www.cnblogs.com/wlzxdm/" target="_blank">wlzxdm</a> <a href="http://msg.cnblogs.com/send/wlzxdm" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4019484" class="blog_comment_body">命令行有什么不好吗？更简单。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4019484,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4019484,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#4071280" class="layer">#12楼</a><a name="4071280" id="comment_anchor_4071280"></a>  <span class="comment_date">2018-09-19 15:24</span> <a id="a_comment_author_4071280" href="https://www.cnblogs.com/mistercpp/" target="_blank">哈巴猫</a> <a href="http://msg.cnblogs.com/send/%E5%93%88%E5%B7%B4%E7%8C%AB" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4071280" class="blog_comment_body">很详细</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4071280,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4071280,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_4071280_avatar" style="display:none;">http://pic.cnblogs.com/face/636871/20140524203726.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#4072163" class="layer">#13楼</a><a name="4072163" id="comment_anchor_4072163"></a>  <span class="comment_date">2018-09-20 11:05</span> <a id="a_comment_author_4072163" href="https://www.cnblogs.com/mistercpp/" target="_blank">哈巴猫</a> <a href="http://msg.cnblogs.com/send/%E5%93%88%E5%B7%B4%E7%8C%AB" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4072163" class="blog_comment_body">感觉这个讲解，只能一个人使用，多人使用，貌似行不通。<br>比如 A，B，C 三个人功能都做好了，如何发布给QA测试<br><br>release版本上有bug，A，B，C 都要修改，如何处理？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4072163,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4072163,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_4072163_avatar" style="display:none;">http://pic.cnblogs.com/face/636871/20140524203726.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#4092608" class="layer">#14楼</a><a name="4092608" id="comment_anchor_4092608"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2018-10-18 09:26</span> <a id="a_comment_author_4092608" href="https://www.cnblogs.com/tian-xie/" target="_blank">天字天蝎</a> <a href="http://msg.cnblogs.com/send/%E5%A4%A9%E5%AD%97%E5%A4%A9%E8%9D%8E" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4092608" class="blog_comment_body"><a href="https://www.cnblogs.com/tian-xie/p/6264104.html#4072163" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,4072163);">@</a>
+哈巴猫<br>在开发环境下develop分支，多人开发是没有问题的，可以在合并之前，先从develop拉取最新，然后再建立feature分支，两个feature分支进行合并，解决冲突，再完成功能，合并至develop即可<br><br>在release分支上，同样可以建立分支，在完成功能之后在合并至release，当然，此时的分支并不是feature，而是和develop、feature、master同级的分支，合并过程和develop一致</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4092608,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4092608,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/tian-xie/p/6264104.html#4110149" class="layer">#15楼</a><a name="4110149" id="comment_anchor_4110149"></a><span id="comment-maxId" style="display:none;">4110149</span><span id="comment-maxDate" style="display:none;">2018/11/8 21:37:23</span>  <span class="comment_date">2018-11-08 21:37</span> <a id="a_comment_author_4110149" href="https://www.cnblogs.com/xiahaook/" target="_blank">夏浩</a> <a href="http://msg.cnblogs.com/send/%E5%A4%8F%E6%B5%A9" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4110149" class="blog_comment_body">这些都是在本地操作的分支吗？<br>develop不需要推送到远程端，多人开发吗？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4110149,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4110149,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="https://www.cnblogs.com/tian-xie/p/6264104.html#" onclick="return RefreshPage();">刷新页面</a><a href="https://www.cnblogs.com/tian-xie/p/6264104.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】超50万VC++源码: 大型组态工控、电力仿真CAD与GIS源码库！</a><br><a href="http://clickc.admaster.com.cn/c/a113612,b3081535,c1705,i0,m101,8a1,8b3,h" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-EH&#39;)">【福利】华为云4核8G云主机免费试用</a><br><a href="http://clickc.admaster.com.cn/c/a116493,b2949399,c1705,i0,m101,8a1,8b3,h" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-华为云&#39;)">【活动】申请成为华为云云享专家 尊享9大权益</a><br><a href="https://cloud.tencent.com/developer/conf/2018-beijing?fromSource=gwzcw.1768694.1768694.1768694" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-腾讯云&#39;)">【活动】腾讯云+社区开发者大会12月15日首都北京盛大起航！</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="https://cloud.tencent.com/act/special/amd?fromSource=gwzcw.1351353.1351353.1351353" target="_blank"><img width="300" height="250" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/24442-20181129113406214-695115565.jpg" alt="腾讯云1129" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;C1&#39;);"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>相关博文：</b><br>·  <a href="https://www.cnblogs.com/linguoguo/p/8574135.html" target="_blank" onclick="clickRecomItmem(8574135,&#39;FYL/ehe1M7SnSppPjko61K1XfeGBGI8YGnKVEYrLgLNBLjFwJQEn3nbSfR6vW7kPclGFtP8SWkdUctMX5qfBpE0o5X3GgTu3ey/E3yDAlE4fXWaryx+Bvo6fgsBLrHm7v1l2BnFBOZ1CAi+l9HfXm61wFcYANjcgdr1BKN4aZ9AsT2C+WlN5wHYojY1+Y/MAgPr2&#39;)">SourceTree</a><br>·  <a href="https://www.cnblogs.com/xiaobaichangan/p/6634154.html" target="_blank" onclick="clickRecomItmem(6634154,&#39;Ynk1ffZ2ooXgsl+68cKFtRpBxXmYhdqgNCPGofuMX6s6zcd6NslND2Mt42mwQsYbbLBaEJzPPh8oCi3gN9KSgynXMP5b3lHz8HyNuldCu4N5quSOi4UjjbUS54sE9FgoDpkUzN9Cgj4NG+QLO1UhhtYVM9B2a4L4mQLCN6pzN1H9GA==&#39;)">git-SourceTree的基本使用</a><br>·  <a href="https://www.cnblogs.com/winnieKing/articles/7682216.html" target="_blank" onclick="clickRecomItmem(7682216,&#39;hKuX1/zsL0vjqaKyNlLzi3o99+1gTbTH9l7BBJFuzdgq61/prnIPImn2AEj9NKpYGhUVzYotMH71+JTZtVWhSiITtl82tOlz3XDUsOHFCK9z5M6kJkaGmmwSzHsGbE3eb23wCIWs/ERur9YGV2+v2e0kIVyRhmh7WdVDXuRukzQiqA==&#39;)">关于sourceTree和gitee的基本使用</a><br>·  <a href="https://www.cnblogs.com/ChinacloudTech/p/7873388.html" target="_blank" onclick="clickRecomItmem(7873388,&#39;6+QXhoQ5x6mhQJn4N3SHHPbCm30FRET++iM66ruaVhHJfDjfuvzZKT6cREaLhcM0i3PN1zidAzAYmQFsfQvZFDuL5NEnl9lLyJ3o2oFsG4alElyTYdQ87rGtLuTZmipx5j5wqzT8JbP0IuRE98tUTcPnsMmloWubKR6FLqm4ybpRzg==&#39;)">SourceTree 基本介绍</a><br>·  <a href="https://www.cnblogs.com/SuMeng/p/8249948.html" target="_blank" onclick="clickRecomItmem(8249948,&#39;6rugmL79hBJM/5B6hXSnpTjAZsOISq3IlNlRZxQvVaMy9ut1mBSU2vRhBvDOP2R/Pu0HWk8VToaXevNpfv5Jpyex+L1BEKWJCFbrn7oO/hqZDPyWvjFuxUDsNCBUD3P9cU1lCRgTlMqSlzcKp8M271BDCzSHPYfT5A522Ln4dkJCf60Z&#39;)">SourceTree的基本使用---基本介绍/本地开发</a><br></div></div>
+<script async="async" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/gpt.js.下载"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<div id="cnblogs_c2" class="c_ad_block">
+    <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;" data-google-query-id="CLuksdmRiN8CFZAzYAodGkcB-A">
+    <script>
+    if (new Date() >= new Date(2018, 9, 13)) {
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1539008685004-0'); });
+    }
+    </script>
+    <div id="google_ads_iframe_/1090369/C2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1090369/C2_0" title="3rd party ad content" name="google_ads_iframe_/1090369/C2_0" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/saved_resource.html"></iframe></div></div>
+</div>
+<div id="under_post_kb"><div class="itnews c_ad_block"><b>最新新闻</b>：<br> ·  <a href="https://news.cnblogs.com/n/614075/" target="_blank">2亿年后地球会是什么样？盘点4种可能的超级大陆猜想</a><br> ·  <a href="https://news.cnblogs.com/n/614074/" target="_blank">互联网踏入反腐深水区</a><br> ·  <a href="https://news.cnblogs.com/n/614073/" target="_blank">NASA在火星表面发现金色岩石，派“好奇号”前去调查</a><br> ·  <a href="https://news.cnblogs.com/n/614072/" target="_blank">英国最大电信服务运营商：已将华为移除出其核心5G网络竞标名单</a><br> ·  <a href="https://news.cnblogs.com/n/614071/" target="_blank">FF称面临严峻现金流危机 内部人士：剩下员工都领美国最低工资</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/tian-xie/">天字天蝎</a><br>园龄：<a href="https://home.cnblogs.com/u/tian-xie/" title="入园时间：2013-09-24">5年2个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/tian-xie/followers/">10</a><br>关注：<a href="https://home.cnblogs.com/u/tian-xie/followees/">12</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;6a9d1b6d-ba24-e311-8d02-90b11c0b17d6&#39;)">+加关注</a></div><script>getFollowStatus('6a9d1b6d-ba24-e311-8d02-90b11c0b17d6')</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2018/11/01&#39;);return false;">&lt;</a></td><td align="center">2018年12月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2019/01/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">25</td><td class="CalOtherMonthDay" align="center">26</td><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalWeekendDay" align="center">1</td></tr><tr><td class="CalWeekendDay" align="center">2</td><td align="center">3</td><td align="center">4</td><td class="CalTodayDay" align="center">5</td><td align="center">6</td><td align="center">7</td><td class="CalWeekendDay" align="center">8</td></tr><tr><td class="CalWeekendDay" align="center">9</td><td align="center">10</td><td align="center">11</td><td align="center">12</td><td align="center">13</td><td align="center">14</td><td class="CalWeekendDay" align="center">15</td></tr><tr><td class="CalWeekendDay" align="center">16</td><td align="center">17</td><td align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td class="CalWeekendDay" align="center">22</td></tr><tr><td class="CalWeekendDay" align="center">23</td><td align="center">24</td><td align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td class="CalWeekendDay" align="center">29</td></tr><tr><td class="CalWeekendDay" align="center">30</td><td align="center">31</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block"></div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/tian-xie/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="https://www.cnblogs.com/tian-xie/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="https://www.cnblogs.com/tian-xie/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="https://www.cnblogs.com/tian-xie/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="https://www.cnblogs.com/tian-xie/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block">
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/tian-xie/tag/javascript/">javascript</a>(5)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/CSS/">CSS</a>(2)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/CSS3/">CSS3</a>(1)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/Excel/">Excel</a>(1)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/Flex/">Flex</a>(1)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/SourceTree/">SourceTree</a>(1)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a>(1)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/%E4%BC%98%E5%85%88%E7%BA%A7/">优先级</a>(1)</li><li><a href="https://www.cnblogs.com/tian-xie/tag/%E6%AD%A3%E5%88%99/">正则</a>(1)</li>
+</ul>
+</div></div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="https://www.cnblogs.com/tian-xie/category/935086.html">Angular</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="https://www.cnblogs.com/tian-xie/category/935085.html">CSS(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="https://www.cnblogs.com/tian-xie/category/935084.html">JavaScript(5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="https://www.cnblogs.com/tian-xie/category/979312.html">Node(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="https://www.cnblogs.com/tian-xie/category/939623.html">Office(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="https://www.cnblogs.com/tian-xie/category/935083.html">SourceTree(1)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="https://www.cnblogs.com/tian-xie/archive/2017/10.html">2017年10月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="https://www.cnblogs.com/tian-xie/archive/2017/07.html">2017年7月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="https://www.cnblogs.com/tian-xie/archive/2017/04.html">2017年4月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="https://www.cnblogs.com/tian-xie/archive/2017/02.html">2017年2月 (3)</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="https://www.cnblogs.com/tian-xie/archive/2017/01.html">2017年1月 (4)</a> </li>
+
+</ul>
+
+</div>
+
+</div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2018 天字天蝎
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+<iframe id="google_osd_static_frame_6924673180944" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./SourceTree的基本使用 - 天字天蝎 - 博客园_files/saved_resource(1).html"></iframe></body></html>
