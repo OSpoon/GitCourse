@@ -175,6 +175,16 @@ git push
 | git push origin name                 | 标签发布     |
 | git push origin :refs/tags/<tagname> | 删除远程标签 |
 
+五 分支管理
+
+| 命令                   | 解释         |
+| ---------------------- | ------------ |
+| git branch feature_1   | 创建分支     |
+| git branch             | 查看分支     |
+| git checkout feature_1 | 切换指定分支 |
+
+
+
 #### 团队协作git操作流程
 
   来源: [https://www.cnblogs.com/allanli/p/git_commands.html](https://www.cnblogs.com/allanli/p/git_commands.html "来源")
