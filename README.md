@@ -166,13 +166,14 @@ git push
 
 ##### 四 标签管理
 
-| 命令                         | 解释         |
-| ---------------------------- | ------------ |
-| git tag                      | 查看所有标签 |
-| git tag name                 | 创建标签     |
-| git tag -a name -m "comment" | 指定提交信息 |
-| git tag -d name              | 删除标签     |
-| git push origin name         | 标签发布     |
+| 命令                                 | 解释         |
+| ------------------------------------ | ------------ |
+| git tag                              | 查看所有标签 |
+| git tag name                         | 创建标签     |
+| git tag -a name -m "comment"         | 指定提交信息 |
+| git tag -d name                      | 删除标签     |
+| git push origin name                 | 标签发布     |
+| git push origin :refs/tags/<tagname> | 删除远程标签 |
 
 #### 团队协作git操作流程
 
