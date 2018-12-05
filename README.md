@@ -183,12 +183,15 @@ git push
 | git branch             | 查看分支     |
 | git checkout feature_1 | 切换指定分支 |
 
-合并分支到master主分支
+1. 合并分支到master主分支
 
-```
-git checkout master 切回master分支
+   ```
+   git checkout master 切回master分支
+   git merge feature_1 合并feature_1到master
+   git branch -d feature_1 删除废弃分支
+   ```
 
-```
+2. 
 
 
 
