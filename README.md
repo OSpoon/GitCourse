@@ -183,6 +183,13 @@ git push
 | git branch             | 查看分支     |
 | git checkout feature_1 | 切换指定分支 |
 
+合并分支到master主分支
+
+```
+git checkout master 切回master分支
+
+```
+
 
 
 #### 团队协作git操作流程
